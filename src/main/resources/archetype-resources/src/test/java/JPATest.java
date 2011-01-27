@@ -20,10 +20,10 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.vmforce.samples.dao.SampleDogOwnerDAO;
-import com.vmforce.samples.entity.SampleDog;
-import com.vmforce.samples.entity.SampleBreed;
-import com.vmforce.samples.entity.SampleDogOwner;
+import ${package}.dao.SampleDogOwnerDAO;
+import ${package}.entity.SampleDog;
+import ${package}.entity.SampleBreed;
+import ${package}.entity.SampleDogOwner;
 
 import static org.junit.Assert.*;
 

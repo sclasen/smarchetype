@@ -2,10 +2,10 @@
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
 package ${package}.dao;
-
+//TEST
 import java.util.List;
 
-import com.vmforce.samples.entity.SampleDogOwner;
+import ${package}.entity.SampleDogOwner;
 
 public interface SampleDogOwnerDAO {
 	

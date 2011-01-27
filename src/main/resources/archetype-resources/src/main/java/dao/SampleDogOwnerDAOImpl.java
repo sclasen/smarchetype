@@ -10,7 +10,7 @@ import javax.persistence.EntityTransaction;
 
 import org.springframework.orm.jpa.support.JpaDaoSupport;
 
-import com.vmforce.samples.entity.SampleDogOwner;
+import ${package}.entity.SampleDogOwner;
 
 public class SampleDogOwnerDAOImpl extends JpaDaoSupport implements SampleDogOwnerDAO {
 
