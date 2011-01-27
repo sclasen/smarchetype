@@ -5,7 +5,7 @@
     <groupId>com.vmforce.samples.service.singlemodule</groupId>
     <version>0.0.1-SNAPSHOT</version>
     <artifactId>sampleWebApp-archetype</artifactId>
-    <packaging>jar</packaging>
+    <packaging>maven-archetype</packaging>
     <properties>
         <force.repo.url>http://repo.t.salesforce.com/archiva/repository/releases</force.repo.url>
         <force.repo.snapshot.url>http://repo.t.salesforce.com/archiva/repository/snapshots</force.repo.snapshot.url>
@@ -22,7 +22,24 @@
             <url>${force.repo.snapshot.url}</url>
         </snapshotRepository>
     </distributionManagement>
+
     <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>2.0</version>
+            </extension>
+        </extensions>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-archetype-plugin</artifactId>
+                    <version>2.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -31,5 +48,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
