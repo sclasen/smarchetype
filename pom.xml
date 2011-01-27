@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.vmforce.samples.service.singlemodule</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>sampleWebApp-archetype</artifactId>
+    <packaging>maven-archetype</packaging>
+    <properties>
+        <force.repo.url>http://repo.t.salesforce.com/archiva/repository/releases</force.repo.url>
+        <force.repo.snapshot.url>http://repo.t.salesforce.com/archiva/repository/snapshots</force.repo.snapshot.url>
+    </properties>
+    <distributionManagement>
+        <repository>
+            <id>force.repo</id>
+            <name>Force.com Repository</name>
+            <url>${force.repo.url}</url>
+        </repository>
+        <snapshotRepository>
+            <id>force.repo.snapshot</id>
+            <name>Force.com Snapshot Repository</name>
+            <url>${force.repo.snapshot.url}</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+</project>

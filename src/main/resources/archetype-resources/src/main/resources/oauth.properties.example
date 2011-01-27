@@ -1,0 +1,15 @@
+
+force.endPoint = https://vmf01.t.salesforce.com
+
+# See Force.com Setup-> Develop-> Remote Access-> Your application name
+# You need to push your application to the VMForce cloud at least once prior to being able to extract
+# this information from the administration UI.
+
+# When testing on localhost, make sure the Callback URL is set to something like this on the remote access UI :
+# http://localhost:8080/sampleWebApp/_auth
+#
+# Check this especially if you are getting an error similar to "redirect_uri must match configuration"
+ 
+force.consumerKey = <your consumer key>
+force.consumerSecret = <your consumer secret>
+
