@@ -1,11 +1,11 @@
-<%@page import="${package}.entity.SampleDog"%>
-<%@ page language="java" import="${package}.entity.*, java.util.*"%>
+<%@page import="com.vmforce.samples.entity.SampleDog"%>
+<%@ page language="java" import="com.vmforce.samples.entity.*, java.util.*"%>
 <HTML>
 <HEAD>
 <TITLE>Sample dog List</TITLE>
 </HEAD>
 <BODY>
-	<H1>List of dogOwners</H1>
+	<H1>List of dog owners</H1>
 	
 	<%
 		List<SampleDogOwner> dogOwners = (List<SampleDogOwner>)request.getAttribute("dogOwners");
@@ -30,6 +30,12 @@
 	%>
 	
 	<p/>
-	<a href="../logout">Logout</a>
+	<%
+		if (request.getUserPrincipal() != null) {
+			%>
+			<a href="../logout">Log out</a>
+			<%
+		}
+	%>
 </BODY>
 </HTML>

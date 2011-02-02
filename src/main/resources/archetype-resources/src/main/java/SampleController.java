@@ -1,7 +1,4 @@
-#set( $symbol_pound = '#' )
-#set( $symbol_dollar = '$' )
-#set( $symbol_escape = '\' )
-package ${package};
+package com.vmforce.samples;
 
 import java.util.List;
 
@@ -15,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import ${package}.dao.SampleDogOwnerDAO;
-import ${package}.entity.SampleDogOwner;
+import com.vmforce.samples.dao.SampleDogOwnerDAO;
+import com.vmforce.samples.entity.SampleDogOwner;
 
 @Controller
 public class SampleController {
@@ -24,9 +21,10 @@ public class SampleController {
 	@Inject
 	private SampleDogOwnerDAO dao; 
 	
+	
 	@RequestMapping(value="/", method=RequestMethod.GET)
-	public String defaultPage (Model model) {		
-		return "welcome";
+	public String appRoot() {
+		return "redirect:/secure/dogOwners";
 	}
 	
 	@RequestMapping(value="/secure/dogOwners", method=RequestMethod.GET)
@@ -35,5 +33,10 @@ public class SampleController {
 		model.addAttribute("dogOwners", dogOwners);
 		
 		return "dogOwners";
+	}
+	
+	@RequestMapping(value="/logoutSuccess", method=RequestMethod.GET)
+	public String logoutSuccess () {
+		return "logoutSuccess";
 	}
 }
