@@ -1,4 +1,4 @@
-package com.vmforce.samples.dao;
+package ${package}.dao;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-import com.vmforce.samples.entity.SampleDogOwner;
+import ${package}.entity.SampleDogOwner;
 
 public class SampleDogOwnerDAOImpl implements SampleDogOwnerDAO {
 

@@ -23,16 +23,9 @@
 	<!-- use-expressions and hasRole only needed if jsp tags are used. 
 		If not using jsp tags you can omit the use-expressions property and set access="ROLE_USER" on the intercept-url tags -->
 	<security:http entry-point-ref="authenticationProcessingFilterEntryPoint" use-expressions="true">
-	    <!--<security:anonymous />
-	    -->
 	    
-	    <!-- Uncomment this to turn on oAuth based authentication/authorization for this project.
-	         If you use this, first make sure your oauth.properties file is properly setup.
-
 	    <security:intercept-url pattern="/secure/**" access="hasRole('ROLE_USER')" />
 	    
-	    -->	     
-	     
 	    <!-- sets this as the authentication filter over the default -->
 	    <security:custom-filter position="FORM_LOGIN_FILTER" ref="authenticationFilter"/>
 	    <security:custom-filter position="LOGOUT_FILTER" ref="logoutFilter"/>

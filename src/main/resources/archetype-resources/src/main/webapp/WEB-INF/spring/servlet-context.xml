@@ -9,7 +9,13 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 
-	<!--<import resource="security-config.xml"/>-->
+	<!-- 
+	Uncomment this to turn on oAuth based authentication/authorization for this project.
+	If you use this, first make sure your oauth.properties file is properly setup.
+	Don't forget to also enable the filter in web.xml.
+	
+	<import resource="security-config.xml"/> 
+	-->
 	
 	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
 	

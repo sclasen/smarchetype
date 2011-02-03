@@ -1,4 +1,4 @@
-package com.vmforce.samples;
+package ${package};
 
 import java.util.List;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.vmforce.samples.dao.SampleDogOwnerDAO;
-import com.vmforce.samples.entity.SampleDogOwner;
+import ${package}.dao.SampleDogOwnerDAO;
+import ${package}.entity.SampleDogOwner;
 
 @Controller
 public class SampleController {

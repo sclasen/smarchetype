@@ -1,5 +1,5 @@
-<%@page import="com.vmforce.samples.entity.SampleDog"%>
-<%@ page language="java" import="com.vmforce.samples.entity.*, java.util.*"%>
+<%@page import="${package}.entity.SampleDog"%>
+<%@ page language="java" import="${package}.entity.*, java.util.*"%>
 <HTML>
 <HEAD>
 <TITLE>Sample dog List</TITLE>
